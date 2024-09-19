@@ -17,34 +17,36 @@ CarNumber::CarNumber()
         firstLetter + secondLetter;
 }
 
-string CarNumber::getNumber() const
-{
-    return string();
+string CarNumber::getNumber() const{
+    return number;
 }
 
-int CarNumber::getCounter()
-{
-    return 0;
+int CarNumber::getCounter(){
+    return counter;
 }
 
-char CarNumber::getFirstLetter()
-{
-    return 0;
+char CarNumber::getFirstLetter(){
+    return firstLetter;
 }
 
-char CarNumber::getSecondLetter()
-{
-    return 0;
+char CarNumber::getSecondLetter(){
+    return secondLetter;
 }
 
-void CarNumber::setCounter(int n)
-{
+void CarNumber::setCounter(int n){
+    if (n >= 1 && n <= 9999) {
+        counter = n;
+    }
 }
 
-void CarNumber::setFirstLetter(char a)
-{
+void CarNumber::setFirstLetter(char a){
+    if (a >= 'A' && a <= 'Z') {
+        firstLetter = a;
+    }
 }
 
-void CarNumber::setSecondLetter(char a)
-{
+void CarNumber::setSecondLetter(char a){
+    if (a >= 'A' && a <= 'Z') {
+        secondLetter = a;
+    }
 }
