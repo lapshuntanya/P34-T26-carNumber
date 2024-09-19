@@ -21,9 +21,15 @@
     <ClCompile Include="CarNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DIA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CarNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
